@@ -30,7 +30,7 @@ public class RecoveryRoomService {
             if(r.getName().equals(p.getName()) && r.getRoomType().equals(p.getRoomType()) && !r.getId().equals(p.getId()))
                 throw new DuplicatedRoomNameException();
         repo.save(p);
-        return p;       
+        return p;        
     }
 
     
